@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 88%;
+  height: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+// ==================================
+.header {
+  width: 100%;
+  p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    font-size: 32px;
+    border: 1px solid black;
+  }
+}
+
+// ==================================
+.buttons {
+  width: 100%;
+  margin:0 auto;
+  display: flex;
+  flex-direction: row;
+  .btn {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+  }
+}
+
+// ==================================
+.dates {
+  width: 100%;
+  p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    font-size: 32px;
+    border: 1px solid black;
+  }
+}
+
+// ==================================
+.directions {
+  width: 70%;
+  float: left;
+  p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    font-size: 32px;
+    border: 1px solid black;
+  }
+}
+.minp {
+  width: 30%;
+  height: 158px;
+  float: right;
+  p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    font-size: 32px;
+    border: 1px solid black;
+  }
+}
+
+// ==================================
+.number {
+  width: 70%;
+  float: left;
+  p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    font-size: 32px;
+    border: 1px solid black;
+  }
+}
+.maxp {
+  width: 30%;
+  height: 160px;
+  float: right;
+  p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    font-size: 32px;
+    border: 1px solid black;
+  }
+}
+
+// ==================================
+.links {
+  width: 70%;
+  p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    font-size: 32px;
+    border: 1px solid black;
+  }
+}
+
+// ==================================
+.price {
+  width: 70%;
+  p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    font-size: 32px;
+    border: 1px solid black;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .paragraph {
+    font-size: 20px !important;
+  }
+  .maxp {
+    height: 137.5px;
+  }
+  .minp {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .paragraph {
+    font-size: 10px !important;
+  }
+  .buttons {
+    width: 100%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    .btn {
+      font-size: 9px !important;
+      width: 100%;
+      height: 60px;
+    }
+  }
+  .maxp {
+    height: 108px;
+  }
+  .minp {
+    height: 108px;
+  }
+}
