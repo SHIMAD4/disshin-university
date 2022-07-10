@@ -210,6 +210,43 @@
     max-width: 90%;
   }
 }
+@media screen and (max-width: 537px) {
+  .container {
+    max-width: 90%;
+  }
+  .buttons {
+    width: 100%;
+  }
+  .buttons .btn {
+    font-size: 70%;
+  }
+  .number {
+    width: 70%;
+    height: 100%;
+  }
+  .number p {
+    font-size: 50%;
+  }
+  .minp {
+    width: 30%;
+  }
+  .minp p {
+    font-size: 50%;
+  }
+  .links {
+    width: 70%;
+    float: left;
+  }
+  .links p {
+    font-size: 50%;
+  }
+  .maxp {
+    width: 30%;
+  }
+  .maxp p {
+    font-size: 50%;
+  }
+}
 @media screen and (max-width: 376px) {
   .container {
     max-width: 90%;
