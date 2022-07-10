@@ -284,3 +284,40 @@
     font-size: 50%;
   }
 }
+@media screen and (max-width: 338px) {
+  .container {
+    max-width: 90%;
+  }
+  .buttons {
+    width: 100%;
+  }
+  .buttons .btn {
+    font-size: 60%;
+  }
+  .number {
+    width: 70%;
+    height: 100%;
+  }
+  .number p {
+    font-size: 40%;
+  }
+  .minp {
+    width: 30%;
+  }
+  .minp p {
+    font-size: 40%;
+  }
+  .links {
+    width: 70%;
+    float: left;
+  }
+  .links p {
+    font-size: 40%;
+  }
+  .maxp {
+    width: 30%;
+  }
+  .maxp p {
+    font-size: 40%;
+  }
+}
