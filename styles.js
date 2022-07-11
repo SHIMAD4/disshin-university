@@ -3,17 +3,34 @@ menu      = document.querySelector('.dropdown-menu')
 dropdown  = document.querySelector('.js_dropdown')
 nums      = document.querySelector('.paragraph')
 datesPa   = document.querySelector('.datesPa')
-datesSoon = document.querySelector('.datesSoon')
-datesSoon.innerHTML = ' СПбГУТ Математика: 12 июля 13.00;  СПбПУ Информатика: 12 июля 16.00;'
 minp      = document.querySelector('.js_minp')
 maxp      = document.querySelector('.js_maxp')
 price     = document.querySelector('.js_price')
+
+datesSoon           = document.querySelector('.datesSoon')
+datesSoon.innerHTML = ' СПбГУТ Математика: 12 июля 13.00;  СПбПУ Информатика: 12 июля 16.00;'
 
 links1    = document.querySelector('.js_links1')
 links2    = document.querySelector('.js_links2')
 links3    = document.querySelector('.js_links3')
 links4    = document.querySelector('.js_links4')
 links5    = document.querySelector('.js_links5')
+links6    = document.querySelector('.js_links6')
+
+links1.classList.add('link-active')
+links2.classList.add('link-active')
+links3.classList.add('link-active')
+links4.classList.add('link-active')
+links5.classList.add('link-active')
+links6.classList.add('link-active')
+
+links1_btn = document.querySelector('.js_links1_btn')
+links2_btn = document.querySelector('.js_links2_btn')
+links3_btn = document.querySelector('.js_links3_btn')
+links4_btn = document.querySelector('.js_links4_btn')
+links5_btn = document.querySelector('.js_links5_btn')
+links6_btn = document.querySelector('.js_links6_btn')
+
 
 button1 = document.querySelector('.js_btn1')
 button2 = document.querySelector('.js_btn2')
@@ -71,14 +88,16 @@ function mosPolyt() {
 
   price.innerHTML = 'Цена: 276.600 рублей в год'
 
-  links1.action = 'https://mospolytech.ru/postupayushchim/priem-v-universitet/rating-abiturientov/?qs=MDAwMDAwMDMxXzAxfDA5LjAzLjAxX8Ll4S3y5fXt7uvu4%2BjofM737eD%2FfMH%2B5Obl8u3g%2FyDu8e3u4uA%3D'
-  links2.action = 'https://mospolytech.ru/postupayushchim/priem-v-universitet/rating-abiturientov/?qs=MDAwMDAwMDMxXzAxfDA5LjAzLjAxX8%2Fw7uPw4Ozs7e7lIO7h5fHv5ffl7ejlIOjt9O7w7OD26O7t7fv1IPHo8fLl7HzO9%2B3g%2F3zB%2FuTm5fLt4P8g7vHt7uLg'
-  links3.action = 'https://mospolytech.ru/postupayushchim/priem-v-universitet/rating-abiturientov/?qs=MDAwMDAwMDMxXzAxfDA5LjAzLjAyX9bo9PDu4uD%2FIPLw4O3x9O7w7OD26P98zvft4P98wf7k5uXy7eD%2FIO7x7e7i4A%3D%3D'
-  links1.classList.add('link-active')
-  links2.classList.add('link-active')
-  links3.classList.add('link-active')
-
-  console.log(links1)
+  links1_btn.disabled = false;
+  links2_btn.disabled = false;
+  links3_btn.disabled = false;
+  links1.action      = 'https://mospolytech.ru/postupayushchim/priem-v-universitet/rating-abiturientov/?qs=MDAwMDAwMDMxXzAxfDA5LjAzLjAxX8Ll4S3y5fXt7uvu4%2BjofM737eD%2FfMH%2B5Obl8u3g%2FyDu8e3u4uA%3D'
+  links2.action      = 'https://mospolytech.ru/postupayushchim/priem-v-universitet/rating-abiturientov/?qs=MDAwMDAwMDMxXzAxfDA5LjAzLjAxX8%2Fw7uPw4Ozs7e7lIO7h5fHv5ffl7ejlIOjt9O7w7OD26O7t7fv1IPHo8fLl7HzO9%2B3g%2F3zB%2FuTm5fLt4P8g7vHt7uLg'
+  links3.action      = 'https://mospolytech.ru/postupayushchim/priem-v-universitet/rating-abiturientov/?qs=MDAwMDAwMDMxXzAxfDA5LjAzLjAyX9bo9PDu4uD%2FIPLw4O3x9O7w7OD26P98zvft4P98wf7k5uXy7eD%2FIO7x7e7i4A%3D%3D'
+  
+  links4_btn.disabled = true;
+  links5_btn.disabled = true;
+  links6_btn.disabled = true;
 }
 button1.addEventListener("click", mosPolyt);
 
@@ -118,11 +137,12 @@ function spbpu() {
 
   price.innerHTML = 'Цена: 105.000 рублей в семестр'
 
-  links.innerHTML = ''
-
-  links1.classList.remove('link-active')
-  links2.classList.remove('link-active')
-  links3.classList.remove('link-active')
+  links1_btn.disabled = true;
+  links2_btn.disabled = true;
+  links3_btn.disabled = true;
+  links4_btn.disabled = true;
+  links5_btn.disabled = true;
+  links6_btn.disabled = true;
 }
 button2.addEventListener("click", spbpu);
 
@@ -162,13 +182,14 @@ function spbgut() {
 
   price.innerHTML = 'Цена: 228.000 рублей в год'
 
-  links.innerHTML = ''
+  links1_btn.disabled = false;
+  links1.action = 'http://priem.sut.ru/spisok-abiturientov'
 
-  links1.classList.remove('link-active')
-  links2.classList.remove('link-active')
-  links3.classList.remove('link-active')
-
-  console.log(links1)
+  links2_btn.disabled = true;
+  links3_btn.disabled = true;
+  links4_btn.disabled = true;
+  links5_btn.disabled = true;
+  links6_btn.disabled = true;
 }
 button3.addEventListener("click", spbgut);
 
@@ -207,11 +228,17 @@ function laty() {
 
   price.innerHTML = 'Цена: 112.500 рублей в семестр'
 
-  links.innerHTML = ''
+  links1_btn.disabled = false;
+  links2_btn.disabled = false;
+  links3_btn.disabled = false;
+  links4_btn.disabled = false;
+  links1.action = 'https://abit.etu.ru/ru/postupayushhim/bakalavriat-i-specialitet/spiski-podavshih-zayavlenie/spisok-postupayushhih?list=4-205'
+  links2.action = 'https://abit.etu.ru/ru/postupayushhim/bakalavriat-i-specialitet/spiski-podavshih-zayavlenie/spisok-postupayushhih?list=4-207'
+  links3.action = 'https://abit.etu.ru/ru/postupayushhim/bakalavriat-i-specialitet/spiski-podavshih-zayavlenie/spisok-postupayushhih?list=4-201'
+  links4.action = 'https://abit.etu.ru/ru/postupayushhim/bakalavriat-i-specialitet/spiski-podavshih-zayavlenie/spisok-postupayushhih?list=4-202'
 
-  links1.classList.remove('link-active')
-  links2.classList.remove('link-active')
-  links3.classList.remove('link-active')
+  links5_btn.disabled = true;
+  links6_btn.disabled = true;
 }
 button4.addEventListener("click", laty);
 
@@ -254,10 +281,16 @@ function itmo() {
 
   price.innerHTML = 'Цена: 280.000 рублей в год'
 
-  links.innerHTML = ''
+  links1_btn.disabled = false;
+  links2_btn.disabled = false;
+  links3_btn.disabled = false;
+  links4_btn.disabled = false;
+  links1.action = 'https://abit.itmo.ru/rating/bachelor/budget/15999'
+  links2.action = 'https://abit.itmo.ru/rating/bachelor/budget/15997'
+  links3.action = 'https://abit.itmo.ru/rating/bachelor/budget/15998'
+  links4.action = 'https://abit.itmo.ru/rating/bachelor/contract/16025'
 
-  links1.classList.remove('link-active')
-  links2.classList.remove('link-active')
-  links3.classList.remove('link-active')
+  links5_btn.disabled = true;
+  links6_btn.disabled = true;
 }
 button5.addEventListener("click", itmo);
