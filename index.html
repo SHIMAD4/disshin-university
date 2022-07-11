@@ -11,53 +11,61 @@
   <div class="container">
     <!-- ============== header ================ -->
     <div class="header">
-      <p class="paragraph">Личное дело по всем университетам</p>
+      <p>Личное дело по всем университетам</p>
     </div>
     <!-- ============== buttons ================ -->
     <div class="buttons">
-      <button class="btn">МосПолитех</button>
-      <button class="btn">СПбПУ</button>
-      <button class="btn">СПбГУТ</button>
-      <button class="btn">ЛЭТИ</button>
-      <button class="btn">ИТМО</button>
-    </div>
-    <!-- ============== dates ================ -->
-    <div class="dates">
-      <p class="paragraph">Даты экзаменов</p>
+      <button class="btn js_btn1">МосПолитех</button>
+      <button class="btn js_btn2">СПбПУ</button>
+      <button class="btn js_btn3">СПбГУТ</button>
+      <button class="btn js_btn4">ЛЭТИ</button>
+      <button class="btn js_btn5">ИТМО</button>
     </div>
     <!-- ============== directions ================ -->
     <div class="directions">
       <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" data-path="one">
+        <button class="btn btn-secondary dropdown-toggle js_dropdown" data-path="one" disabled>
           Направления
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" data-target="one">
-          <a class="dropdown-item" href="#">Направление 1</a><br>
-          <a class="dropdown-item" href="#">Направление 2</a><br>
-          <a class="dropdown-item" href="#">Направление 3</a><br>
+          <p class="dropdown-item js_dropdownItem1" href="#"></p>
+          <p class="dropdown-item js_dropdownItem2" href="#"></p>
+          <p class="dropdown-item js_dropdownItem3" href="#"></p>
+          <p class="dropdown-item js_dropdownItem4" href="#"></p>
+          <p class="dropdown-item js_dropdownItem5" href="#"></p>
+          <p class="dropdown-item js_dropdownItem6" href="#"></p>
         </div>
       </div>
     </div>
+    <!-- ============== dates ================ -->
+    <div class="dates">
+      <p class="datesPa">Даты экзаменов</p>
+    </div>
     <!-- ============== number ================ -->
     <div class="number">
-      <p class="paragraph">Номер личного дела</p>
+      <p class="paragraph">Номер в рейтинговом списке:</p>
     </div>
     <div class="minp">
-      <p class="paragraph">Минимальные баллы</p>
+      <p>Минимальные баллы</p>
     </div>
     <!-- ============== links ================ -->
     <div class="links">
-      <p class="paragraph">Ссылки на рейтинговые списки</p>
+      <p>Ссылки на рейтинговые списки</p>
     </div>
     <div class="maxp">
-      <p class="paragraph">Набранные баллы</p>
+      <p>Набранные баллы</p>
+    </div>
+    <!-- ============== soon ================ -->
+    <div class="dates-soon">
+      <p class="datesSoon">Ближайшие экзамены</p>
     </div>
     <!-- ============== price ================ -->
     <div class="price">
-      <p class="paragraph">Цены на контракт</p>
+      <p>Цены на контракт</p>
     </div>
   </div>
 
   <script src="./main.js"></script> <!-- main script -->
+  <script src="./styles.js"></script> <!-- styles script -->
 </body>
 </html>

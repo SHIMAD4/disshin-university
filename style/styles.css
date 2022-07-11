@@ -13,10 +13,22 @@
   font-family: "Montserrat", sans-serif;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0 0 0 5px;
+}
+
 .header {
   width: 100%;
+  background-color: white;
 }
 .header p {
+  color: black;
   width: 100%;
   height: 100%;
   display: flex;
@@ -24,6 +36,7 @@
   padding: 20px 0 20px 0;
   font-size: 100%;
   border: 0.5px solid black;
+  font-weight: bold;
 }
 
 .buttons {
@@ -43,6 +56,11 @@
   float: left;
 }
 
+.dropdown-toggle:disabled {
+  background-color: white;
+  color: black;
+}
+
 .dropdown-toggle {
   width: 100%;
   font-size: 100%;
@@ -52,83 +70,153 @@
 }
 
 .dropdown-menu {
+  width: 200%;
   display: none;
+  background-color: white;
+  color: black;
+  border: 0.5px solid black;
 }
 
 .menu-active {
   display: block;
 }
 
+.dropdown-menu-link {
+  width: 100%;
+  display: none;
+  background-color: white;
+  color: black;
+  border: 0.5px solid black;
+}
+
 .dates {
   width: 50%;
   float: right;
+  background-color: white;
 }
 .dates p {
+  color: black;
   display: flex;
   justify-content: center;
   padding: 20px 0 20px 0;
   border: 0.5px solid black;
+  font-weight: 500;
 }
 
 .number {
   width: 70%;
   height: 100%;
   float: left;
+  background-color: white;
 }
 .number p {
+  color: black;
   display: flex;
   justify-content: center;
   padding: 20px 0 20px 0;
   font-size: 100%;
   border: 0.5px solid black;
+  font-weight: 500;
 }
 
 .minp {
   width: 30%;
   float: right;
+  background-color: white;
 }
 .minp p {
+  color: black;
   display: flex;
   justify-content: center;
   padding: 20px 0 20px 0;
   font-size: 100%;
   border: 0.5px solid black;
+  font-weight: 500;
 }
 
 .links {
   width: 70%;
   float: left;
+  background-color: white;
 }
 .links p {
+  color: black;
   display: flex;
   justify-content: center;
   padding: 20px 0 20px 0;
   font-size: 100%;
   border: 0.5px solid black;
+  font-weight: 500;
 }
 
 .maxp {
   width: 30%;
   float: right;
+  background-color: white;
 }
 .maxp p {
+  color: black;
   display: flex;
   justify-content: center;
   padding: 20px 0 20px 0;
   font-size: 100%;
   border: 0.5px solid black;
+  font-weight: 500;
+}
+
+.dates-soon {
+  width: 100%;
+  float: left;
+  background-color: white;
+}
+.dates-soon p {
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 20px 0;
+  font-size: 100%;
+  border: 0.5px solid black;
+  font-weight: 500;
 }
 
 .price {
   width: 100%;
   float: left;
+  background-color: white;
 }
 .price p {
+  color: black;
   display: flex;
   justify-content: center;
   padding: 20px 0 20px 0;
   font-size: 100%;
   border: 0.5px solid black;
+  font-weight: 500;
+}
+
+.mosPolyt {
+  background-color: rgb(51, 68, 143);
+  color: white;
+}
+
+.spbpu {
+  background-color: rgb(31, 161, 38);
+  color: white;
+}
+
+.spbgut {
+  background-color: rgb(224, 158, 3);
+  color: white;
+}
+
+.laty {
+  background-color: rgb(107, 125, 204);
+  color: white;
+}
+
+.itmo {
+  background-color: rgb(84, 84, 84);
+  color: white;
 }
 
 @media screen and (max-width: 800px) {
