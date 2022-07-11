@@ -5,6 +5,9 @@ nums      = document.querySelector('.paragraph')
 datesPa   = document.querySelector('.datesPa')
 datesSoon = document.querySelector('.datesSoon')
 datesSoon.innerHTML = ' СПбГУТ Математика: 12 июля 13.00;  СПбПУ Информатика: 12 июля 16.00;'
+minp      = document.querySelector('.js_minp')
+maxp      = document.querySelector('.js_maxp')
+price    = document.querySelector('.js_price')
 
 button1 = document.querySelector('.js_btn1')
 button2 = document.querySelector('.js_btn2')
@@ -56,6 +59,11 @@ function mosPolyt() {
   dropdown.innerHTML = '3 Направления, 3 бюджет'
 
   datesPa.innerHTML = `Мат: Закончен; Инф: 20.07.2022; Рус: 18.07.2022;`
+
+  minp.innerHTML = 'Проходные баллы: 1) 263 2) 232 3) ***'
+  maxp.innerHTML = 'Набранные баллы: Мат: 100 Инф: *** Рус: ***'
+
+  price.innerHTML = 'Цена: 276.600 рублей в год'
 }
 button1.addEventListener("click", mosPolyt);
 
@@ -89,6 +97,11 @@ function spbpu() {
   dropdown.innerHTML = '6 Направления, 3 бюджет, 3 контракт'
 
   datesPa.innerHTML = `Мат: 19.07.2022; Инф: 12.07.2022; Рус: 20.07.2022;`
+
+  minp.innerHTML = 'Проходные баллы: 1) 270 2) 266 3) 256'
+  maxp.innerHTML = 'Набранные баллы: Мат: *** Инф: *** Рус: ***'
+
+  price.innerHTML = 'Цена: 105.000 рублей в семестр'
 }
 button2.addEventListener("click", spbpu);
 
@@ -122,6 +135,11 @@ function spbgut() {
   dropdown.innerHTML = '5 Направления, 4 бюджет, 1 контракт'
 
   datesPa.innerHTML = `Мат: 12.07.2022; Инф: 14.07.2022; Рус: 15.07.2022;`
+
+  minp.innerHTML = 'Проходные баллы: 1) 253  2) 250 3) 252 '
+  maxp.innerHTML = 'Набранные баллы: Мат: *** Инф: *** Рус: ***'
+
+  price.innerHTML = 'Цена: 228.000 рублей в год'
 }
 button3.addEventListener("click", spbgut);
 
@@ -134,10 +152,10 @@ function laty() {
   button4.classList.add('laty')
   button5.classList.remove('itmo')
 
-  js_dropdownItem1.innerHTML = '1) === Бюджет === Информационные системы и технологии'
-  js_dropdownItem2.innerHTML = '2) === Бюджет === Программная инженерия'
-  js_dropdownItem3.innerHTML = '3) === Бюджет === Информатика и вычислительная техника (Искусственный интеллект)'
-  js_dropdownItem4.innerHTML = '4) === Контракт === Информатика и вычислительная техника (Искусственный интеллект)'
+  js_dropdownItem1.innerHTML = '1) === Бюджет === 09.03.02 Информационные системы и технологии'
+  js_dropdownItem2.innerHTML = '2) === Бюджет === 09.03.04 Программная инженерия'
+  js_dropdownItem3.innerHTML = '3) === Бюджет === 09.03.01 Информатика и вычислительная техника (Искусственный интеллект)'
+  js_dropdownItem4.innerHTML = '4) === Контракт === 09.03.01 Информатика и вычислительная техника (Искусственный интеллект)'
   js_dropdownItem5.innerHTML = '5) 5 Направление отсутствует'
   js_dropdownItem6.innerHTML = '6) 6 Направление отсутствует'
 
@@ -153,7 +171,12 @@ function laty() {
 
   dropdown.innerHTML = '4 Направления, 3 бюджет, 1 контракт'
 
-  datesPa.innerHTML = `Мат: Закончена; Инф: 22.07.2022; Рус: 23.07.2022;`  
+  datesPa.innerHTML = `Мат: Закончена; Инф: 22.07.2022; Рус: 23.07.2022;` 
+  
+  minp.innerHTML = 'Проходные баллы: 1) 263  2) 282 3) 265'
+  maxp.innerHTML = 'Набранные баллы: Мат: 60 Инф: *** Рус: ***'
+
+  price.innerHTML = 'Цена: 112.500 рублей в семестр'
 }
 button4.addEventListener("click", laty);
 
@@ -190,5 +213,10 @@ function itmo() {
   dropdown.innerHTML = '4 Направления, 3 бюджет, 1 контракт'
 
   datesPa.innerHTML = `Мат: Закончена; Инф: Закончена; Рус: Закончена;` 
+
+  minp.innerHTML = 'Проходные баллы: 1) 290  2) 305 3) 281'
+  maxp.innerHTML = 'Набранные баллы: Мат: 70 Инф: 20 Рус: 96'
+
+  price.innerHTML = 'Цена: 280.000 рублей в год'
 }
 button5.addEventListener("click", itmo);
