@@ -7,7 +7,13 @@ datesSoon = document.querySelector('.datesSoon')
 datesSoon.innerHTML = ' СПбГУТ Математика: 12 июля 13.00;  СПбПУ Информатика: 12 июля 16.00;'
 minp      = document.querySelector('.js_minp')
 maxp      = document.querySelector('.js_maxp')
-price    = document.querySelector('.js_price')
+price     = document.querySelector('.js_price')
+
+links1    = document.querySelector('.js_links1')
+links2    = document.querySelector('.js_links2')
+links3    = document.querySelector('.js_links3')
+links4    = document.querySelector('.js_links4')
+links5    = document.querySelector('.js_links5')
 
 button1 = document.querySelector('.js_btn1')
 button2 = document.querySelector('.js_btn2')
@@ -64,6 +70,15 @@ function mosPolyt() {
   maxp.innerHTML = 'Набранные баллы: Мат: 100 Инф: *** Рус: ***'
 
   price.innerHTML = 'Цена: 276.600 рублей в год'
+
+  links1.action = 'https://mospolytech.ru/postupayushchim/priem-v-universitet/rating-abiturientov/?qs=MDAwMDAwMDMxXzAxfDA5LjAzLjAxX8Ll4S3y5fXt7uvu4%2BjofM737eD%2FfMH%2B5Obl8u3g%2FyDu8e3u4uA%3D'
+  links2.action = 'https://mospolytech.ru/postupayushchim/priem-v-universitet/rating-abiturientov/?qs=MDAwMDAwMDMxXzAxfDA5LjAzLjAxX8%2Fw7uPw4Ozs7e7lIO7h5fHv5ffl7ejlIOjt9O7w7OD26O7t7fv1IPHo8fLl7HzO9%2B3g%2F3zB%2FuTm5fLt4P8g7vHt7uLg'
+  links3.action = 'https://mospolytech.ru/postupayushchim/priem-v-universitet/rating-abiturientov/?qs=MDAwMDAwMDMxXzAxfDA5LjAzLjAyX9bo9PDu4uD%2FIPLw4O3x9O7w7OD26P98zvft4P98wf7k5uXy7eD%2FIO7x7e7i4A%3D%3D'
+  links1.classList.add('link-active')
+  links2.classList.add('link-active')
+  links3.classList.add('link-active')
+
+  console.log(links1)
 }
 button1.addEventListener("click", mosPolyt);
 
@@ -102,6 +117,12 @@ function spbpu() {
   maxp.innerHTML = 'Набранные баллы: Мат: *** Инф: *** Рус: ***'
 
   price.innerHTML = 'Цена: 105.000 рублей в семестр'
+
+  links.innerHTML = ''
+
+  links1.classList.remove('link-active')
+  links2.classList.remove('link-active')
+  links3.classList.remove('link-active')
 }
 button2.addEventListener("click", spbpu);
 
@@ -140,6 +161,14 @@ function spbgut() {
   maxp.innerHTML = 'Набранные баллы: Мат: *** Инф: *** Рус: ***'
 
   price.innerHTML = 'Цена: 228.000 рублей в год'
+
+  links.innerHTML = ''
+
+  links1.classList.remove('link-active')
+  links2.classList.remove('link-active')
+  links3.classList.remove('link-active')
+
+  console.log(links1)
 }
 button3.addEventListener("click", spbgut);
 
@@ -177,6 +206,12 @@ function laty() {
   maxp.innerHTML = 'Набранные баллы: Мат: 60 Инф: *** Рус: ***'
 
   price.innerHTML = 'Цена: 112.500 рублей в семестр'
+
+  links.innerHTML = ''
+
+  links1.classList.remove('link-active')
+  links2.classList.remove('link-active')
+  links3.classList.remove('link-active')
 }
 button4.addEventListener("click", laty);
 
@@ -218,5 +253,11 @@ function itmo() {
   maxp.innerHTML = 'Набранные баллы: Мат: 70 Инф: 20 Рус: 96'
 
   price.innerHTML = 'Цена: 280.000 рублей в год'
+
+  links.innerHTML = ''
+
+  links1.classList.remove('link-active')
+  links2.classList.remove('link-active')
+  links3.classList.remove('link-active')
 }
 button5.addEventListener("click", itmo);
