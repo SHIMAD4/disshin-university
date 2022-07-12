@@ -8,14 +8,18 @@ maxp      = document.querySelector('.js_maxp')
 price     = document.querySelector('.js_price')
 
 datesSoon           = document.querySelector('.datesSoon')
-datesSoon.innerHTML = ' СПбГУТ Математика: 12 июля 13.00;  СПбПУ Информатика: 12 июля 16.00;'
+datesSoon.innerHTML = 'СПбГУТ Инф: 14.07.2022, 13:00;'
 
-links1    = document.querySelector('.js_links1')
-links2    = document.querySelector('.js_links2')
-links3    = document.querySelector('.js_links3')
-links4    = document.querySelector('.js_links4')
-links5    = document.querySelector('.js_links5')
-links6    = document.querySelector('.js_links6')
+// Рус: 15.07.2022; СПбГУТ
+// Инф: 20.07.2022; Рус: 18.07.2022; МосПолитех
+// Мат: 19.07.2022; Инф: 22.07.2022; Рус: 20.07.2022; СПбПУ
+
+links1 = document.querySelector('.js_links1')
+links2 = document.querySelector('.js_links2')
+links3 = document.querySelector('.js_links3')
+links4 = document.querySelector('.js_links4')
+links5 = document.querySelector('.js_links5')
+links6 = document.querySelector('.js_links6')
 
 links1.classList.add('link-active')
 links2.classList.add('link-active')
@@ -37,6 +41,9 @@ button2 = document.querySelector('.js_btn2')
 button3 = document.querySelector('.js_btn3')
 button4 = document.querySelector('.js_btn4')
 button5 = document.querySelector('.js_btn5')
+
+// button4.disabled = true;
+// button5.disabled = true;
 
 
 js_dropdownItem1 = document.querySelector('.js_dropdownItem1')
@@ -130,14 +137,16 @@ function spbpu() {
 
   dropdown.innerHTML = '6 Направления, 3 бюджет, 3 контракт'
 
-  datesPa.innerHTML = `Мат: 19.07.2022; Инф: 12.07.2022; Рус: 20.07.2022;`
+  datesPa.innerHTML = `Мат: 19.07.2022; Инф: 22.07.2022; Рус: 20.07.2022;`
 
   minp.innerHTML = 'Проходные баллы: 1) 270 2) 266 3) 256'
   maxp.innerHTML = 'Набранные баллы: Мат: *** Инф: *** Рус: ***'
 
   price.innerHTML = 'Цена: 105.000 рублей в семестр'
 
-  links1_btn.disabled = true;
+  links1_btn.disabled = false;
+  links1.action = 'https://enroll.spbstu.ru/applicants/1-2'
+
   links2_btn.disabled = true;
   links3_btn.disabled = true;
   links4_btn.disabled = true;
@@ -175,7 +184,7 @@ function spbgut() {
 
   dropdown.innerHTML = '5 Направления, 4 бюджет, 1 контракт'
 
-  datesPa.innerHTML = `Мат: 12.07.2022; Инф: 14.07.2022; Рус: 15.07.2022;`
+  datesPa.innerHTML = `Мат: Закончен; Инф: 14.07.2022; Рус: 15.07.2022;`
 
   minp.innerHTML = 'Проходные баллы: 1) 253  2) 250 3) 252 '
   maxp.innerHTML = 'Набранные баллы: Мат: *** Инф: *** Рус: ***'
@@ -183,7 +192,7 @@ function spbgut() {
   price.innerHTML = 'Цена: 228.000 рублей в год'
 
   links1_btn.disabled = false;
-  links1.action = 'http://priem.sut.ru/spisok-abiturientov'
+  links1.action = 'https://www.sut.ru/vopros-otvet/voprosy-po-postupleniyu/gde-nayti-spiski-s-ballami-ege'
 
   links2_btn.disabled = true;
   links3_btn.disabled = true;
