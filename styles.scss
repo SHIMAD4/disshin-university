@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .container {
   max-width: 1440px;
   justify-content: center;
@@ -11,18 +13,22 @@
   flex-direction: column;
   font-family: 'Montserrat', sans-serif;
 }
+
 a {
   color: black;
   text-decoration: none;
 }
-p{
+
+p {
   margin: 0;
   padding: 0 0 0 5px;
 }
+
 // ==================================
 .header {
   width: 100%;
   background-color: white;
+
   p {
     color: black;
     width: 100%;
@@ -41,6 +47,7 @@ p{
   width: 100%;
   display: flex;
   flex-direction: row;
+
   .btn {
     width: 100%;
     height: 100px;
@@ -54,10 +61,12 @@ p{
   width: 50%;
   float: left;
 }
+
 .dropdown-toggle:disabled {
   background-color: white;
   color: black;
 }
+
 .dropdown-toggle {
   width: 100%;
   font-size: 100%;
@@ -65,6 +74,7 @@ p{
   border-radius: 0;
   border: 1px solid black;
 }
+
 .dropdown-menu {
   width: 200%;
   display: none;
@@ -72,9 +82,11 @@ p{
   color: black;
   border: 0.5px solid black;
 }
+
 .menu-active {
   display: block;
 }
+
 .dropdown-menu-link {
   width: 100%;
   display: none;
@@ -88,11 +100,13 @@ p{
   width: 50%;
   float: right;
   background-color: white;
+
   p {
     color: black;
     display: flex;
     justify-content: center;
-    padding: 20px 0 20px 0;
+    // font-size: 100% !important;
+    // padding: 20px 0 20px 0 !important;
     border: 0.5px solid black;
     font-weight: 500;
   }
@@ -104,6 +118,7 @@ p{
   height: 100%;
   float: left;
   background-color: white;
+
   p {
     color: black;
     display: flex;
@@ -114,16 +129,18 @@ p{
     font-weight: 500;
   }
 }
+
 .minp {
   width: 30%;
   float: right;
   background-color: white;
+
   p {
     color: black;
     display: flex;
     justify-content: center;
-    padding: 20px 0 20px 0;
-    font-size: 100%;
+    // font-size: 100% !important;
+    // padding: 20px 0 20px 0 !important;
     border: 0.5px solid black;
     font-weight: 500;
   }
@@ -134,38 +151,7 @@ p{
   width: 70%;
   float: left;
   background-color: white;
-  p {
-    color: black;
-    display: flex;
-    justify-content: center;
-    padding: 20px 0 20px 0;
-    font-size: 100%;
-    border: 0.5px solid black;
-    font-weight: 500;
-  }
-}
-.links-btn {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  .btn {
-    width: 100%;
-    height: 50px;
-    font-size: 100%;
-    padding: 0 10px 0 10px;
-  }
-}
-.link {
-  display: none;
-}
-.link-active {
-  display: inline-block;
-}
-.maxp {
-  width: 30%;
-  float: right;
-  background-color: white;
+
   p {
     color: black;
     display: flex;
@@ -177,11 +163,50 @@ p{
   }
 }
 
+.links-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .btn {
+    width: 100%;
+    height: 50px;
+    font-size: 100%;
+    padding: 0 10px 0 10px;
+  }
+}
+
+.link {
+  display: none;
+}
+
+.link-active {
+  display: inline-block;
+}
+
+.maxp {
+  width: 30%;
+  float: right;
+  background-color: white;
+
+  p {
+    color: black;
+    display: flex;
+    justify-content: center;
+    // font-size: 100% !important;
+    // padding: 20px 0 20px 0 !important;
+    border: 0.5px solid black;
+    font-weight: 500;
+  }
+}
+
 // ==================================
 .dates-soon {
   width: 100%;
   float: left;
   background-color: white;
+
   p {
     color: black;
     display: flex;
@@ -198,6 +223,7 @@ p{
   width: 100%;
   float: left;
   background-color: white;
+
   p {
     color: black;
     display: flex;
@@ -214,172 +240,215 @@ p{
   background-color: rgb(51, 68, 143); // blocks
   color: white;
 }
+
 .spbpu {
   background-color: rgb(31, 161, 38); // blocks
   color: white;
 }
+
 .spbgut {
   background-color: rgb(224, 158, 3); // blocks
   color: white;
 }
+
 .laty {
   background-color: rgb(107, 125, 204); // blocks
   color: white;
 }
+
 .itmo {
   background-color: rgb(84, 84, 84); // blocks
   color: white;
 }
 
 //============== MEDIA ==============
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
   .container {
     max-width: 80%;
   }
+
   .buttons {
     width: 100%;
+
     .btn {
       font-size: 100%;
     }
   }
+
   .number {
     width: 70%;
     height: 100%;
+
     p {
       font-size: 80%;
     }
   }
+
   .minp {
     width: 30%;
+
     p {
       font-size: 80%;
     }
   }
+
   .links {
     width: 70%;
     float: left;
+
     p {
       font-size: 80%;
     }
   }
+
   .maxp {
     width: 30%;
+
     p {
       font-size: 80%;
     }
   }
 }
-@media screen and (max-width: 700px){
+
+@media screen and (max-width: 700px) {
   .container {
     max-width: 90%;
   }
+
   .buttons {
     width: 100%;
+
     .btn {
       font-size: 60%;
     }
   }
+
   .number {
     width: 70%;
     height: 100%;
+
     p {
       font-size: 40%;
     }
   }
-  .dates p{
+
+  .dates p {
     padding: 10px 0 10px 0;
   }
+
   .minp {
     width: 30%;
+
     p {
       font-size: 40%;
       padding: 16px 0 16px 0;
     }
   }
+
   .links-btn {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
     .btn {
       height: 50px;
       font-size: 43%;
       padding: 0 10px 0 10px;
     }
   }
+
   .maxp {
     width: 30%;
+
     p {
       font-size: 30%;
       padding: 21px 0 20px 0;
     }
   }
 }
-@media screen and (max-width: 610px){
+
+@media screen and (max-width: 610px) {
   .container {
     max-width: 90%;
   }
+
   .buttons {
     width: 100%;
+
     .btn {
       font-size: 60%;
     }
   }
+
   .number {
     width: 70%;
     height: 100%;
+
     p {
       font-size: 40%;
     }
   }
-  .dates p{
+
+  .dates p {
     padding: 10px 0 10px 0;
   }
+
   .minp {
     width: 30%;
+
     p {
       font-size: 40%;
       padding: 16px 0 16px 0;
     }
   }
+
   .links-btn {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
     .btn {
       height: 50px;
       font-size: 43%;
       padding: 0 10px 0 10px;
     }
   }
+
   .maxp {
     width: 30%;
+
     p {
       font-size: 30%;
       padding: 21px 0 20px 0;
     }
   }
 }
-@media screen and (min-width: 509px){
+
+@media screen and (min-width: 509px) {
   .maxp {
     width: 30%;
+
     p {
       font-size: 30%;
       padding: 24px 0 24px 0;
     }
   }
 }
-@media screen and (min-width: 451px){
+
+@media screen and (min-width: 451px) {
   .minp {
     width: 30%;
+
     p {
       font-size: 40%;
       padding: 20px 0 20px 0;
     }
   }
 }
-@media screen and (min-width: 431px){
+
+@media screen and (min-width: 431px) {
   .dates {
     p {
       padding: 18px 0 18px 0;
@@ -387,138 +456,174 @@ p{
     }
   }
 }
-@media screen and (max-width: 414px){
+
+@media screen and (max-width: 414px) {
   .container {
     max-width: 90%;
   }
+
   .buttons {
     width: 100%;
+
     .btn {
       font-size: 60%;
     }
   }
+
   .number {
     width: 70%;
     height: 100%;
+
     p {
       font-size: 40%;
     }
   }
-  .dates p{
+
+  .dates p {
     padding: 10px 0 10px 0;
   }
+
   .minp {
     width: 30%;
+
     p {
       font-size: 40%;
       padding: 16px 0 16px 0;
     }
   }
+
   .links-btn {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
     .btn {
       height: 50px;
       font-size: 43%;
       padding: 0 10px 0 10px;
     }
   }
+
   .maxp {
     width: 30%;
+
     p {
       font-size: 30%;
       padding: 21px 0 20px 0;
     }
   }
 }
-@media screen and (max-width: 375px){
+
+@media screen and (max-width: 375px) {
   .container {
     max-width: 90%;
   }
+
   .buttons {
     width: 100%;
+
     .btn {
       font-size: 60%;
     }
   }
+
   .number {
     width: 70%;
     height: 100%;
+
     p {
       font-size: 40%;
     }
   }
-  .dates p{
+
+  .dates p {
     padding: 10px 0 10px 0;
   }
+
   .minp {
     width: 30%;
+
     p {
       font-size: 40%;
       padding: 16px 0 16px 0;
     }
   }
+
   .links-btn {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
     .btn {
       height: 50px;
       font-size: 43%;
       padding: 0 10px 0 10px;
     }
   }
+
   .maxp {
     width: 30%;
+
     p {
       font-size: 30%;
       padding: 20px 0 20px 0;
     }
   }
 }
-@media screen and (max-width: 338px){
+
+@media screen and (max-width: 338px) {
   .container {
     max-width: 90%;
   }
+
   .buttons {
     width: 100%;
+
     .btn {
       font-size: 60%;
     }
   }
+
   .number {
     width: 70%;
     height: 100%;
+
     p {
       font-size: 40%;
     }
   }
-  .dates p{
+
+  .dates p {
     padding: 10px 0 10px 0;
   }
+
   .minp {
     width: 30%;
+
     p {
       font-size: 40%;
       padding: 16px 0 16px 0;
     }
   }
+
   .links-btn {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
     .btn {
       height: 50px;
       font-size: 43%;
       padding: 0 10px 0 10px;
     }
   }
+
   .maxp {
     width: 30%;
+
     p {
       font-size: 30%;
       padding: 18px 0 18px 0;

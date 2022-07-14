@@ -1,40 +1,25 @@
 body      = document.body
-menu      = document.querySelector('.dropdown-menu')
+menu      = document.querySelector('.js_dropdown-menu')
 dropdown  = document.querySelector('.js_dropdown')
-nums      = document.querySelector('.paragraph')
-datesPa   = document.querySelector('.datesPa')
+nums      = document.querySelector('.js_paragraph')
+datesPa   = document.querySelector('.js_datesPa')
 minp      = document.querySelector('.js_minp')
 maxp      = document.querySelector('.js_maxp')
 price     = document.querySelector('.js_price')
 
 datesSoon           = document.querySelector('.datesSoon')
-datesSoon.innerHTML = 'СПбГУТ Инф: 14.07.2022, 13:00;'
+datesSoon.innerHTML = 'СПбГУТ Рус: 15.07.2022;, 13:00;'
 
-// Рус: 15.07.2022; СПбГУТ
-// Инф: 20.07.2022; Рус: 18.07.2022; МосПолитех
-// Мат: 19.07.2022; Инф: 22.07.2022; Рус: 20.07.2022; СПбПУ
+// Рус: 18.07.2022; Инф: 20.07.2022;                  МосПолитех
+// Мат: 19.07.2022; Рус: 20.07.2022; Инф: 22.07.2022; СПбПУ
 
-links1 = document.querySelector('.js_links1')
-links2 = document.querySelector('.js_links2')
-links3 = document.querySelector('.js_links3')
-links4 = document.querySelector('.js_links4')
-links5 = document.querySelector('.js_links5')
-links6 = document.querySelector('.js_links6')
+links = document.querySelectorAll(".js_links")
 
-links1.classList.add('link-active')
-links2.classList.add('link-active')
-links3.classList.add('link-active')
-links4.classList.add('link-active')
-links5.classList.add('link-active')
-links6.classList.add('link-active')
+links.forEach(e => {
+  e.classList.add('link-active')
+});
 
-links1_btn = document.querySelector('.js_links1_btn')
-links2_btn = document.querySelector('.js_links2_btn')
-links3_btn = document.querySelector('.js_links3_btn')
-links4_btn = document.querySelector('.js_links4_btn')
-links5_btn = document.querySelector('.js_links5_btn')
-links6_btn = document.querySelector('.js_links6_btn')
-
+links_btn = document.querySelectorAll('.js_links_btn')
 
 button1 = document.querySelector('.js_btn1')
 button2 = document.querySelector('.js_btn2')
@@ -42,19 +27,10 @@ button3 = document.querySelector('.js_btn3')
 button4 = document.querySelector('.js_btn4')
 button5 = document.querySelector('.js_btn5')
 
-// button4.disabled = true;
-// button5.disabled = true;
+button4.disabled = true;
+button5.disabled = true;
 
-
-js_dropdownItem1 = document.querySelector('.js_dropdownItem1')
-js_dropdownItem2 = document.querySelector('.js_dropdownItem2')
-js_dropdownItem3 = document.querySelector('.js_dropdownItem3')
-js_dropdownItem4 = document.querySelector('.js_dropdownItem4')
-js_dropdownItem5 = document.querySelector('.js_dropdownItem5')
-js_dropdownItem6 = document.querySelector('.js_dropdownItem6')
-
-
-
+js_dropdownItems = document.querySelectorAll('.js_dropdownItem')
 
 
 function mosPolyt() {
@@ -64,17 +40,12 @@ function mosPolyt() {
   button4.classList.remove('laty')
   button5.classList.remove('itmo')
 
-  js_dropdownItem1.innerHTML = '1) === Бюджет === 09.03.01 Информатика и вычислительная техника (Веб-технологии) (Б-О, Москва)'
-  js_dropdownItem2.innerHTML = '2) === Бюджет === 09.03.02 Информационные системы и технологии (Цифровая трансформация) (Б-О, Москва)'
-  js_dropdownItem3.innerHTML = `3) === Бюджет === 09.03.02 Информационные системы и технологии 
-                                (Автоматизированные системы обработки информации и управления;
-                                   Информационные технологии в медиаиндустрии и дизайне;
-                                    Технологии дополненной и виртуальной реальности;
-                                     Программное обеспечение игровой компьютерной индустрии;
-                                      Информационные системы умных пространств) (Б-О, Москва)`
-  js_dropdownItem4.innerHTML = '4) Направление отсутствует'
-  js_dropdownItem5.innerHTML = '5) Направление отсутствует'
-  js_dropdownItem6.innerHTML = '6) Направление отсутствует'
+  js_dropdownItems[0].innerHTML = "1) === Бюджет === 09.03.01 Информатика и вычислительная техника (Веб-технологии) (Б-О, Москва)"
+  js_dropdownItems[1].innerHTML = "2) === Бюджет === 09.03.02 Информационные системы и технологии (Цифровая трансформация) (Б-О, Москва)"
+  js_dropdownItems[2].innerHTML = "3) === Бюджет === 09.03.02 Информационные системы и технологии (Автоматизированные системы обработки информации и управления; Информационные технологии в медиаиндустрии и дизайне; Технологии дополненной и виртуальной реальности; Программное обеспечение игровой компьютерной индустрии; Информационные системы умных пространств) (Б-О, Москва)"
+  js_dropdownItems[3].innerHTML = '4) Направление отсутствует'
+  js_dropdownItems[4].innerHTML = '5) Направление отсутствует'
+  js_dropdownItems[5].innerHTML = '6) Направление отсутствует'
 
   body.classList.add('mosPolyt')
   body.classList.remove('spbpu')
@@ -84,27 +55,27 @@ function mosPolyt() {
 
   menu.classList.add('menu-active')
 
-  nums.innerHTML = 'Номер в рейтинговом списке: 52240'
+  nums.innerHTML = "Номер в рейтинговом списке: 52240"
 
-  dropdown.innerHTML = '3 Направления, 3 бюджет'
+  dropdown.innerHTML = "3 Направления, 3 бюджет"
 
-  datesPa.innerHTML = `Мат: Закончен; Инф: 20.07.2022; Рус: 18.07.2022;`
+  datesPa.innerHTML = "Мат: Закончен; Инф: 20.07.2022; Рус: 18.07.2022;"
 
-  minp.innerHTML = 'Проходные баллы: 1) 263 2) 232 3) ***'
-  maxp.innerHTML = 'Набранные баллы: Мат: 100 Инф: *** Рус: ***'
+  minp.innerHTML = "Проходные баллы: 1) 263 2) 232 3) ***"
+  maxp.innerHTML = "Набранные баллы: Мат: 95 Инф: *** Рус: ***"
 
-  price.innerHTML = 'Цена: 276.600 рублей в год'
+  price.innerHTML = "Цена: 276.600 рублей в год"
 
-  links1_btn.disabled = false;
-  links2_btn.disabled = false;
-  links3_btn.disabled = false;
-  links1.action      = 'https://mospolytech.ru/postupayushchim/priem-v-universitet/rating-abiturientov/?qs=MDAwMDAwMDMxXzAxfDA5LjAzLjAxX8Ll4S3y5fXt7uvu4%2BjofM737eD%2FfMH%2B5Obl8u3g%2FyDu8e3u4uA%3D'
-  links2.action      = 'https://mospolytech.ru/postupayushchim/priem-v-universitet/rating-abiturientov/?qs=MDAwMDAwMDMxXzAxfDA5LjAzLjAxX8%2Fw7uPw4Ozs7e7lIO7h5fHv5ffl7ejlIOjt9O7w7OD26O7t7fv1IPHo8fLl7HzO9%2B3g%2F3zB%2FuTm5fLt4P8g7vHt7uLg'
-  links3.action      = 'https://mospolytech.ru/postupayushchim/priem-v-universitet/rating-abiturientov/?qs=MDAwMDAwMDMxXzAxfDA5LjAzLjAyX9bo9PDu4uD%2FIPLw4O3x9O7w7OD26P98zvft4P98wf7k5uXy7eD%2FIO7x7e7i4A%3D%3D'
+  links_btn[0].disabled = false;
+  links_btn[1].disabled = false;
+  links_btn[2].disabled = false;
+  links[0].action       = "https://mospolytech.ru/postupayushchim/priem-v-universitet/rating-abiturientov/?qs=MDAwMDAwMDMxXzAxfDA5LjAzLjAxX8Ll4S3y5fXt7uvu4%2BjofM737eD%2FfMH%2B5Obl8u3g%2FyDu8e3u4uA%3D"
+  links[1].action       = "https://mospolytech.ru/postupayushchim/priem-v-universitet/rating-abiturientov/?qs=MDAwMDAwMDMxXzAxfDA5LjAzLjAxX8%2Fw7uPw4Ozs7e7lIO7h5fHv5ffl7ejlIOjt9O7w7OD26O7t7fv1IPHo8fLl7HzO9%2B3g%2F3zB%2FuTm5fLt4P8g7vHt7uLg"
+  links[2].action       = "https://mospolytech.ru/postupayushchim/priem-v-universitet/rating-abiturientov/?qs=MDAwMDAwMDMxXzAxfDA5LjAzLjAyX9bo9PDu4uD%2FIPLw4O3x9O7w7OD26P98zvft4P98wf7k5uXy7eD%2FIO7x7e7i4A%3D%3D"
   
-  links4_btn.disabled = true;
-  links5_btn.disabled = true;
-  links6_btn.disabled = true;
+  links_btn[3].disabled = true;
+  links_btn[4].disabled = true;
+  links_btn[5].disabled = true;
 }
 button1.addEventListener("click", mosPolyt);
 
@@ -117,13 +88,12 @@ function spbpu() {
   button4.classList.remove('laty')
   button5.classList.remove('itmo')
 
-  js_dropdownItem1.innerHTML = '1) === Бюджет === 09.03.01 Информатика и вычислительная техника'
-  js_dropdownItem2.innerHTML = '2) === Бюджет === 09.03.02 Информационные системы и технологии'
-  js_dropdownItem3.innerHTML = '3) === Бюджет === 09.03.03 Прикладная информатика'
-
-  js_dropdownItem4.innerHTML = '4) === Контракт === 09.03.01 Информатика и вычислительная техника'
-  js_dropdownItem5.innerHTML = '5) === Контракт === 09.03.02 Информационные системы и технологии'
-  js_dropdownItem6.innerHTML = '6) === Контракт === 09.03.03 Прикладная информатика'
+  js_dropdownItems[0].innerHTML = "1) === Бюджет === 09.03.01 Информатика и вычислительная техника"
+  js_dropdownItems[1].innerHTML = "2) === Бюджет === 09.03.02 Информационные системы и технологии"
+  js_dropdownItems[2].innerHTML = "3) === Бюджет === 09.03.03 Прикладная информатика"
+  js_dropdownItems[3].innerHTML = "4) === Контракт === 09.03.01 Информатика и вычислительная техника"
+  js_dropdownItems[4].innerHTML = "5) === Контракт === 09.03.02 Информационные системы и технологии"
+  js_dropdownItems[5].innerHTML = "6) === Контракт === 09.03.03 Прикладная информатика"
 
   body.classList.remove('mosPolyt')
   body.classList.add('spbpu')
@@ -133,25 +103,25 @@ function spbpu() {
 
   menu.classList.add('menu-active')
 
-  nums.innerHTML = 'Номер в рейтинговом списке: '
+  nums.innerHTML = "Номер в рейтинговом списке: ***"
 
-  dropdown.innerHTML = '6 Направления, 3 бюджет, 3 контракт'
+  dropdown.innerHTML = "6 Направления, 3 бюджет, 3 контракт"
 
-  datesPa.innerHTML = `Мат: 19.07.2022; Инф: 22.07.2022; Рус: 20.07.2022;`
+  datesPa.innerHTML = "Мат: 19.07.2022; Инф: 22.07.2022; Рус: 20.07.2022;"
 
-  minp.innerHTML = 'Проходные баллы: 1) 270 2) 266 3) 256'
-  maxp.innerHTML = 'Набранные баллы: Мат: *** Инф: *** Рус: ***'
+  minp.innerHTML = "Проходные баллы: 1) 270 2) 266 3) 256"
+  maxp.innerHTML = "Набранные баллы: Мат: *** Инф: *** Рус: ***"
 
-  price.innerHTML = 'Цена: 105.000 рублей в семестр'
+  price.innerHTML = "Цена: 105.000 рублей в семестр"
 
-  links1_btn.disabled = false;
-  links1.action = 'https://enroll.spbstu.ru/applicants/1-2'
+  links_btn[0].disabled = false;
+  links[0].action       = "https://enroll.spbstu.ru/applicants/1-2"
 
-  links2_btn.disabled = true;
-  links3_btn.disabled = true;
-  links4_btn.disabled = true;
-  links5_btn.disabled = true;
-  links6_btn.disabled = true;
+  links_btn[1].disabled = true;
+  links_btn[2].disabled = true;
+  links_btn[3].disabled = true;
+  links_btn[4].disabled = true;
+  links_btn[5].disabled = true;
 }
 button2.addEventListener("click", spbpu);
 
@@ -165,12 +135,12 @@ function spbgut() {
   button5.classList.remove('itmo')
 
 
-  js_dropdownItem1.innerHTML = '1) === Бюджет === 09.03.02 Информационные системы и технологии; Дизайн графических и пользовательских интерфейсов информационных систем'
-  js_dropdownItem2.innerHTML = '2) === Бюджет === 09.03.02 Информационные системы и технологии; Интеллектуальные информационные системы и технологии'
-  js_dropdownItem3.innerHTML = '3) === Бюджет === 09.03.02 Информационные системы и технологии; Прикладные информационные системы'
-  js_dropdownItem4.innerHTML = '4) === Бюджет === 27.03.04 Управление в технических системах; Информационные технологии в технических системах'
-  js_dropdownItem5.innerHTML = '5) === Контракт === 27.03.04 Управление в технических системах; Информационные технологии в технических системах'
-  js_dropdownItem6.innerHTML = '6) 6 Направление отсутствует'
+  js_dropdownItems[0].innerHTML = "1) === Бюджет === 09.03.02 Информационные системы и технологии; Дизайн графических и пользовательских интерфейсов информационных систем"
+  js_dropdownItems[1].innerHTML = "2) === Бюджет === 09.03.02 Информационные системы и технологии; Интеллектуальные информационные системы и технологии"
+  js_dropdownItems[2].innerHTML = "3) === Бюджет === 09.03.02 Информационные системы и технологии; Прикладные информационные системы"
+  js_dropdownItems[3].innerHTML = "4) === Бюджет === 27.03.04 Управление в технических системах; Информационные технологии в технических системах"
+  js_dropdownItems[4].innerHTML = "5) === Контракт === 27.03.04 Управление в технических системах; Информационные технологии в технических системах"
+  js_dropdownItems[5].innerHTML = '6) 6 Направление отсутствует'
 
   body.classList.remove('mosPolyt')
   body.classList.remove('spbpu')
@@ -180,126 +150,24 @@ function spbgut() {
 
   menu.classList.add('menu-active');
 
-  nums.innerHTML = 'Номер в рейтинговом списке: 22-15911'
+  nums.innerHTML = "Номер в рейтинговом списке: 22-15911"
 
-  dropdown.innerHTML = '5 Направления, 4 бюджет, 1 контракт'
+  dropdown.innerHTML = "5 Направления, 4 бюджет, 1 контракт"
 
-  datesPa.innerHTML = `Мат: Закончен; Инф: 14.07.2022; Рус: 15.07.2022;`
+  datesPa.innerHTML = "Мат: Закончен; Инф: Закончен; Рус: 15.07.2022;"
 
-  minp.innerHTML = 'Проходные баллы: 1) 253  2) 250 3) 252 '
-  maxp.innerHTML = 'Набранные баллы: Мат: *** Инф: *** Рус: ***'
+  minp.innerHTML = "Проходные баллы: 1) 253  2) 250 3) 252 "
+  maxp.innerHTML = "Набранные баллы: Мат: 70 Инф: *** Рус: ***"
 
-  price.innerHTML = 'Цена: 228.000 рублей в год'
+  price.innerHTML = "Цена: 228.000 рублей в год"
 
-  links1_btn.disabled = false;
-  links1.action = 'https://www.sut.ru/vopros-otvet/voprosy-po-postupleniyu/gde-nayti-spiski-s-ballami-ege'
+  links_btn[0].disabled = false;
+  links[0].action       = "https://www.sut.ru/vopros-otvet/voprosy-po-postupleniyu/gde-nayti-spiski-s-ballami-ege"
 
-  links2_btn.disabled = true;
-  links3_btn.disabled = true;
-  links4_btn.disabled = true;
-  links5_btn.disabled = true;
-  links6_btn.disabled = true;
+  links_btn[1].disabled = true;
+  links_btn[2].disabled = true;
+  links_btn[3].disabled = true;
+  links_btn[4].disabled = true;
+  links_btn[5].disabled = true;
 }
 button3.addEventListener("click", spbgut);
-
-
-
-function laty() {
-  button1.classList.remove('mosPolyt')
-  button2.classList.remove('spbpu')
-  button3.classList.remove('spbgut')
-  button4.classList.add('laty')
-  button5.classList.remove('itmo')
-
-  js_dropdownItem1.innerHTML = '1) === Бюджет === 09.03.02 Информационные системы и технологии'
-  js_dropdownItem2.innerHTML = '2) === Бюджет === 09.03.04 Программная инженерия'
-  js_dropdownItem3.innerHTML = '3) === Бюджет === 09.03.01 Информатика и вычислительная техника (Искусственный интеллект)'
-  js_dropdownItem4.innerHTML = '4) === Контракт === 09.03.01 Информатика и вычислительная техника (Искусственный интеллект)'
-  js_dropdownItem5.innerHTML = '5) 5 Направление отсутствует'
-  js_dropdownItem6.innerHTML = '6) 6 Направление отсутствует'
-
-  body.classList.remove('mosPolyt')
-  body.classList.remove('spbpu')
-  body.classList.remove('spbgut')
-  body.classList.add('laty')
-  body.classList.remove('itmo')
-
-  menu.classList.add('menu-active')
-
-  nums.innerHTML = 'Номер в рейтинговом списке: 311-860-616 46'
-
-  dropdown.innerHTML = '4 Направления, 3 бюджет, 1 контракт'
-
-  datesPa.innerHTML = `Мат: Закончена; Инф: 22.07.2022; Рус: 23.07.2022;` 
-  
-  minp.innerHTML = 'Проходные баллы: 1) 263  2) 282 3) 265'
-  maxp.innerHTML = 'Набранные баллы: Мат: 60 Инф: *** Рус: ***'
-
-  price.innerHTML = 'Цена: 112.500 рублей в семестр'
-
-  links1_btn.disabled = false;
-  links2_btn.disabled = false;
-  links3_btn.disabled = false;
-  links4_btn.disabled = false;
-  links1.action = 'https://abit.etu.ru/ru/postupayushhim/bakalavriat-i-specialitet/spiski-podavshih-zayavlenie/spisok-postupayushhih?list=4-205'
-  links2.action = 'https://abit.etu.ru/ru/postupayushhim/bakalavriat-i-specialitet/spiski-podavshih-zayavlenie/spisok-postupayushhih?list=4-207'
-  links3.action = 'https://abit.etu.ru/ru/postupayushhim/bakalavriat-i-specialitet/spiski-podavshih-zayavlenie/spisok-postupayushhih?list=4-201'
-  links4.action = 'https://abit.etu.ru/ru/postupayushhim/bakalavriat-i-specialitet/spiski-podavshih-zayavlenie/spisok-postupayushhih?list=4-202'
-
-  links5_btn.disabled = true;
-  links6_btn.disabled = true;
-}
-button4.addEventListener("click", laty);
-
-
-
-function itmo() {
-  button1.classList.remove('mosPolyt')
-  button2.classList.remove('spbpu')
-  button3.classList.remove('spbgut')
-  button4.classList.remove('laty')
-  button5.classList.add('itmo')
-
-  js_dropdownItem1.innerHTML = `1) === Бюджет === Разработка программного обеспечения / Software Engineering 
-                                  09.03.02 Информационные системы и технологии`
-  js_dropdownItem2.innerHTML = `2) === Бюджет === Компьютерные технологии: Программирование и искусственный интеллект
-                                  01.03.02 Прикладная математика и информатика`
-  js_dropdownItem3.innerHTML = `3) === Бюджет === Компьютерные системы и технологии
-                                  09.03.01 Информатика и вычислительная техника`
-  js_dropdownItem4.innerHTML = `4) === Контракт === Системное и прикладное программное обеспечение
-                                  09.03.04 Программная инженерия`
-  js_dropdownItem5.innerHTML = '5) Направление отсутствует'
-  js_dropdownItem6.innerHTML = '6) Направление отсутствует'
-
-  body.classList.remove('mosPolyt')
-  body.classList.remove('spbpu')
-  body.classList.remove('spbgut')
-  body.classList.remove('laty')
-  body.classList.add('itmo')
-
-  menu.classList.add('menu-active')
-
-  nums.innerHTML = 'Номер в рейтинговом списке: F1-0002-2022'
-
-  dropdown.innerHTML = '4 Направления, 3 бюджет, 1 контракт'
-
-  datesPa.innerHTML = `Мат: Закончена; Инф: Закончена; Рус: Закончена;` 
-
-  minp.innerHTML = 'Проходные баллы: 1) 290  2) 305 3) 281'
-  maxp.innerHTML = 'Набранные баллы: Мат: 70 Инф: 20 Рус: 96'
-
-  price.innerHTML = 'Цена: 280.000 рублей в год'
-
-  links1_btn.disabled = false;
-  links2_btn.disabled = false;
-  links3_btn.disabled = false;
-  links4_btn.disabled = false;
-  links1.action = 'https://abit.itmo.ru/rating/bachelor/budget/15999'
-  links2.action = 'https://abit.itmo.ru/rating/bachelor/budget/15997'
-  links3.action = 'https://abit.itmo.ru/rating/bachelor/budget/15998'
-  links4.action = 'https://abit.itmo.ru/rating/bachelor/contract/16025'
-
-  links5_btn.disabled = true;
-  links6_btn.disabled = true;
-}
-button5.addEventListener("click", itmo);
