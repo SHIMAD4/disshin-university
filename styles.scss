@@ -431,8 +431,8 @@ p {
     width: 30%;
 
     p {
-      font-size: 30%;
-      padding: 24px 0 24px 0;
+      // font-size: 30%;
+      padding: 20px 0 20px 0;
     }
   }
 }
@@ -442,7 +442,7 @@ p {
     width: 30%;
 
     p {
-      font-size: 40%;
+      // font-size: 40%;
       padding: 20px 0 20px 0;
     }
   }
@@ -451,8 +451,8 @@ p {
 @media screen and (min-width: 431px) {
   .dates {
     p {
-      padding: 18px 0 18px 0;
-      font-size: 60%;
+      padding: 20px 0 20px 0;
+      // font-size: 60%;
     }
   }
 }

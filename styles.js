@@ -8,9 +8,9 @@ maxp      = document.querySelector('.js_maxp')
 price     = document.querySelector('.js_price')
 
 datesSoon           = document.querySelector('.datesSoon')
-datesSoon.innerHTML = 'СПбГУТ Рус: 15.07.2022;, 13:00;'
+datesSoon.innerHTML = 'СПбГУТ Рус: 15.07.2022, 13:00; МосПолитех Рус: 18.07.2022, **:**;'
 
-// Рус: 18.07.2022; Инф: 20.07.2022;                  МосПолитех
+// Инф: 20.07.2022;                  
 // Мат: 19.07.2022; Рус: 20.07.2022; Инф: 22.07.2022; СПбПУ
 
 links = document.querySelectorAll(".js_links")
@@ -69,17 +69,15 @@ function mosPolyt() {
   links_btn[0].disabled = false;
   links_btn[1].disabled = false;
   links_btn[2].disabled = false;
-  links[0].action       = "https://mospolytech.ru/postupayushchim/priem-v-universitet/rating-abiturientov/?qs=MDAwMDAwMDMxXzAxfDA5LjAzLjAxX8Ll4S3y5fXt7uvu4%2BjofM737eD%2FfMH%2B5Obl8u3g%2FyDu8e3u4uA%3D"
-  links[1].action       = "https://mospolytech.ru/postupayushchim/priem-v-universitet/rating-abiturientov/?qs=MDAwMDAwMDMxXzAxfDA5LjAzLjAxX8%2Fw7uPw4Ozs7e7lIO7h5fHv5ffl7ejlIOjt9O7w7OD26O7t7fv1IPHo8fLl7HzO9%2B3g%2F3zB%2FuTm5fLt4P8g7vHt7uLg"
-  links[2].action       = "https://mospolytech.ru/postupayushchim/priem-v-universitet/rating-abiturientov/?qs=MDAwMDAwMDMxXzAxfDA5LjAzLjAyX9bo9PDu4uD%2FIPLw4O3x9O7w7OD26P98zvft4P98wf7k5uXy7eD%2FIO7x7e7i4A%3D%3D"
+  links[1].action       = "https://mospolytech.ru/postupayushchim/priem-v-universitet/rating-abiturientov/?qs=MDAwMDAwMDMxXzAxfDA5LjAzLjAxX8Ll4S3y5fXt7uvu4%2BjofM737eD%2FfMH%2B5Obl8u3g%2FyDu8e3u4uA%3D"
+  links[2].action       = "https://mospolytech.ru/postupayushchim/priem-v-universitet/rating-abiturientov/?qs=MDAwMDAwMDMxXzAxfDA5LjAzLjAxX8%2Fw7uPw4Ozs7e7lIO7h5fHv5ffl7ejlIOjt9O7w7OD26O7t7fv1IPHo8fLl7HzO9%2B3g%2F3zB%2FuTm5fLt4P8g7vHt7uLg"
+  links[3].action       = "https://mospolytech.ru/postupayushchim/priem-v-universitet/rating-abiturientov/?qs=MDAwMDAwMDMxXzAxfDA5LjAzLjAyX9bo9PDu4uD%2FIPLw4O3x9O7w7OD26P98zvft4P98wf7k5uXy7eD%2FIO7x7e7i4A%3D%3D"
   
   links_btn[3].disabled = true;
   links_btn[4].disabled = true;
   links_btn[5].disabled = true;
 }
 button1.addEventListener("click", mosPolyt);
-
-
 
 function spbpu() {
   button1.classList.remove('mosPolyt')
@@ -115,7 +113,7 @@ function spbpu() {
   price.innerHTML = "Цена: 105.000 рублей в семестр"
 
   links_btn[0].disabled = false;
-  links[0].action       = "https://enroll.spbstu.ru/applicants/1-2"
+  links[1].action       = "https://enroll.spbstu.ru/applicants/1-2"
 
   links_btn[1].disabled = true;
   links_btn[2].disabled = true;
@@ -124,8 +122,6 @@ function spbpu() {
   links_btn[5].disabled = true;
 }
 button2.addEventListener("click", spbpu);
-
-
 
 function spbgut() {
   button1.classList.remove('mosPolyt')
@@ -150,7 +146,7 @@ function spbgut() {
 
   menu.classList.add('menu-active');
 
-  nums.innerHTML = "Номер в рейтинговом списке: 22-15911"
+  nums.innerHTML = "Номер в рейтинговом списке: 22-15911 или по ФИО"
 
   dropdown.innerHTML = "5 Направления, 4 бюджет, 1 контракт"
 
@@ -162,10 +158,13 @@ function spbgut() {
   price.innerHTML = "Цена: 228.000 рублей в год"
 
   links_btn[0].disabled = false;
-  links[0].action       = "https://www.sut.ru/vopros-otvet/voprosy-po-postupleniyu/gde-nayti-spiski-s-ballami-ege"
-
   links_btn[1].disabled = true;
   links_btn[2].disabled = true;
+
+  links[1].action       = "https://www.sut.ru/doci/abbit/entrance_tests/math120722.pdf"
+  // links[2].action       = ""
+  // links[3].action       = ""
+
   links_btn[3].disabled = true;
   links_btn[4].disabled = true;
   links_btn[5].disabled = true;
