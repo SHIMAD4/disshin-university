@@ -8,10 +8,10 @@ maxp      = document.querySelector('.js_maxp')
 price     = document.querySelector('.js_price')
 
 datesSoon           = document.querySelector('.datesSoon')
-datesSoon.innerHTML = 'СПбГУТ Рус: 15.07.2022, 13:00; МосПолитех Рус: 18.07.2022, **:**;'
+datesSoon.innerHTML = 'МосПолитех Рус: 18.07.2022, 12:00; СПбПУ Мат: 19.07.2022, 14:00;'
 
-// Инф: 20.07.2022;                  
-// Мат: 19.07.2022; Рус: 20.07.2022; Инф: 22.07.2022; СПбПУ
+//  Инф: 20.07.2022, 12:00; МосПолитех
+//  Рус: 20.07.2022, 17:00; Инф: 22.07.2022, 12:00; СПбПУ
 
 links = document.querySelectorAll(".js_links")
 
@@ -150,7 +150,7 @@ function spbgut() {
 
   dropdown.innerHTML = "5 Направления, 4 бюджет, 1 контракт"
 
-  datesPa.innerHTML = "Мат: Закончен; Инф: Закончен; Рус: 15.07.2022;"
+  datesPa.innerHTML = "Мат: Закончен; Инф: Закончен; Рус: Закончен;"
 
   minp.innerHTML = "Проходные баллы: 1) 253  2) 250 3) 252 "
   maxp.innerHTML = "Набранные баллы: Мат: 70 Инф: *** Рус: ***"
