@@ -8,10 +8,9 @@ maxp      = document.querySelector('.js_maxp')
 price     = document.querySelector('.js_price')
 
 datesSoon           = document.querySelector('.datesSoon')
-datesSoon.innerHTML = 'МосПолитех Рус: 18.07.2022, 12:00; СПбПУ Мат: 19.07.2022, 14:00;'
+datesSoon.innerHTML = 'СПбПУ Мат: 19.07, 14:00; МосПолитех Инф: 20.07, 12:00; СПбПУ Рус: 20.07, 17:00;'
 
-//  Инф: 20.07.2022, 12:00; МосПолитех
-//  Рус: 20.07.2022, 17:00; Инф: 22.07.2022, 12:00; СПбПУ
+//  Инф: 22.07, 12:00; Физ: 06.08, 12:00  СПбПУ
 
 links = document.querySelectorAll(".js_links")
 
@@ -59,7 +58,7 @@ function mosPolyt() {
 
   dropdown.innerHTML = "3 Направления, 3 бюджет"
 
-  datesPa.innerHTML = "Мат: Закончен; Инф: 20.07.2022; Рус: 18.07.2022;"
+  datesPa.innerHTML = "Мат: Закончен; Инф: 20.07.2022; Рус: Закончен;"
 
   minp.innerHTML = "Проходные баллы: 1) 263 2) 232 3) ***"
   maxp.innerHTML = "Набранные баллы: Мат: 95 Инф: *** Рус: ***"
@@ -153,7 +152,7 @@ function spbgut() {
   datesPa.innerHTML = "Мат: Закончен; Инф: Закончен; Рус: Закончен;"
 
   minp.innerHTML = "Проходные баллы: 1) 253  2) 250 3) 252 "
-  maxp.innerHTML = "Набранные баллы: Мат: 70 Инф: *** Рус: ***"
+  maxp.innerHTML = "Набранные баллы: Мат: 70 Инф: 41 Рус: 83"
 
   price.innerHTML = "Цена: 228.000 рублей в год"
 
