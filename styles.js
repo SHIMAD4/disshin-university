@@ -8,9 +8,10 @@ maxp      = document.querySelector('.js_maxp')
 price     = document.querySelector('.js_price')
 
 datesSoon           = document.querySelector('.datesSoon')
-datesSoon.innerHTML = 'СПбПУ Мат: 19.07, 14:00; МосПолитех Инф: 20.07, 12:00; СПбПУ Рус: 20.07, 17:00;'
+datesSoon.innerHTML = 'МосПолитех Инф: 20.07, 12:00; СПбПУ Рус: 20.07, 17:00;'
 
-//  Инф: 22.07, 12:00; Физ: 06.08, 12:00  СПбПУ
+//Мат: 22.07, 14:00;  Инф: 22.07, 12:00; 
+//Физ: 06.08, 12:00  СПбПУ
 
 links = document.querySelectorAll(".js_links")
 
